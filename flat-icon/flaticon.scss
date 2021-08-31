@@ -1,0 +1,53 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?3335942ba58acad3ac9f705a5f50b1ff") format("truetype"),
+url("./flaticon.woff?3335942ba58acad3ac9f705a5f50b1ff") format("woff"),
+url("./flaticon.woff2?3335942ba58acad3ac9f705a5f50b1ff") format("woff2"),
+url("./flaticon.eot?3335942ba58acad3ac9f705a5f50b1ff#iefix") format("embedded-opentype"),
+url("./flaticon.svg?3335942ba58acad3ac9f705a5f50b1ff#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "lung": "\f101",
+    "test": "\f102",
+    "microscope": "\f103",
+    "microscope-1": "\f104",
+    "microscope-2": "\f105",
+    "blood-pressure": "\f106",
+    "heart-rate": "\f107",
+);
+
+.flaticon-lung:before {
+    content: map-get($flaticon-map, "lung");
+}
+.flaticon-test:before {
+    content: map-get($flaticon-map, "test");
+}
+.flaticon-microscope:before {
+    content: map-get($flaticon-map, "microscope");
+}
+.flaticon-microscope-1:before {
+    content: map-get($flaticon-map, "microscope-1");
+}
+.flaticon-microscope-2:before {
+    content: map-get($flaticon-map, "microscope-2");
+}
+.flaticon-blood-pressure:before {
+    content: map-get($flaticon-map, "blood-pressure");
+}
+.flaticon-heart-rate:before {
+    content: map-get($flaticon-map, "heart-rate");
+}
